@@ -12,8 +12,7 @@ public class NoNullArrayList<T> extends ArrayList<T> {
           if (element == null) {
                throw new IllegalArgumentException("**ERROR - cannot add null");
           }
-          super.add(element);
-          return true;
+          return super.add(element);
      }
      public void add(int index, T element) {
           if (element == null) {
@@ -21,10 +20,10 @@ public class NoNullArrayList<T> extends ArrayList<T> {
           }
           super.add(index, element);
      }
-     /* NoNullArrayList is an ArrayList of T that cannot take a null as a value.
-
-    Override set and both add methods -> throw an IllegalArgumentException when null is added,
-                                       otherwise call the old add method.
-
-    Only have 2 constructors:  default + startingCapacity. */
+     public T set(int index, T element) {
+          if (element == null) {
+               throw new IllegalArgumentException("**ERROR - cannot add null");
+          }
+          return super.set(index, element);
+     }
 }

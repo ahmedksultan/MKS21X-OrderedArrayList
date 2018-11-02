@@ -7,5 +7,7 @@ public class Demo {
           smashbros.add("pikachu");
           smashbros.add(1, "incineroar");
           System.out.println(smashbros); // [mario, incineroar, luigi, ness, pikachu]
+          smashbros.set(1, "king k rool");
+          System.out.println(smashbros);// [mario, king k rool, luigi, ness, pikachu]
      }
 }
