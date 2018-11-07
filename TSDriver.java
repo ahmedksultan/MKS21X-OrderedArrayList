@@ -1,6 +1,7 @@
 public class TSDriver {
 
   public static void main(String[] args) {
+    //driver courtesy of timothy so via google group
 
     NoNullArrayList<String> NAL = new NoNullArrayList<>();
 
