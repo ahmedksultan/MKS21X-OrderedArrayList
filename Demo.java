@@ -16,5 +16,8 @@ public class Demo {
           System.out.println("...Complete! Printing list...\n\texpected output: [mario, king k rool, luigi, ness, pikachu]");
           System.out.println("\tprinted  output: " + smashbros);// [mario, king k rool, luigi, ness, pikachu]
           System.out.println();
+          System.out.println("\nCreating new OrderedArrayList...Complete!");
+          OrderedArrayList<int> numbers = new OrderedArrayList<>();
+          
      }
 }
